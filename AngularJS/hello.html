@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>AngularJS</title>
+		<script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
+	</head>
+	<body>
+		<!-- 在没有js的情况下，如果ng-app定义了名称，ng-bind绑定的数据失效 -->
+		<div ng-app="" ng-init="name='Leon';age='20'">s
+			<!-- ng-bind在span文本段中绑定数据 -->
+			<p>姓名：<span ng-bind="name"></span></p>
+			<!-- ng-model在input输入框中绑定数据 -->
+			姓名：<input ng-model="name" />
+			<p>姓名：{{name}}</span></p>
+			<p>年龄：<span ng-bind="age"></span></p>
+			<p>年龄：{{age}}</span></p>
+			<p>思考问题：HTML的什么标签用ng-model绑定数据？什么标签用ng-bind绑定数据？什么时候用{{}}绑定数据？</p>
+		</div>
+	</body>
+</html>
